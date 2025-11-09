@@ -15,6 +15,12 @@
 //     quick_tap_ms = <170>;
 // };
 
+/ {
+    chosen {
+        zmk,kscan = &kscan_facedown;
+    };
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
 };
