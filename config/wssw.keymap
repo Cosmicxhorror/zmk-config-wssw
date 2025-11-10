@@ -58,13 +58,7 @@ combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
 };
-#define LAYER_COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-combo_##NAME { \
-    timeout-ms = <20>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-};
+
 
 #define COMBOS_TOP_ROW(LTPR, LTRM, LTMI, MTII, RTIM, RTMR, RTRP) \
 	SLOWCOMBO(_ltpr, LTPR, 6 0) \
