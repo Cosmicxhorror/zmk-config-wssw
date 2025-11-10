@@ -51,20 +51,22 @@ combo_##NAME { \
     timeout-ms = <20>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
+    layers = <0>; \
 };
 #define SLOWCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
     timeout-ms = <40>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
+    layers = <0>; \
 };
 #define TCOMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
 combo_##NAME { \
     timeout-ms = <TIMEOUT>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
+    layers = <0>; \
 };
-
 
 #define COMBOS_TOP_ROW(LTPR, LTRM, LTMI, MTII, RTIM, RTMR, RTRP) \
 	SLOWCOMBO(_ltpr, LTPR, 6 0) \
