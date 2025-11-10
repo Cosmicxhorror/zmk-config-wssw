@@ -77,11 +77,9 @@ combo_##NAME { \
 	COMBO(_rbmr, RBMR, 12 13)
 
 
-//  _______________________  _______________________
-// |  0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7 |
-//       \  8  |  9  | 10  /\  11 |  12 |  13 /
-//             \ 14  | 15 /  \ 16 |  17 /
-//              ----------    ----------
+	//			00	01	02			03	04	05
+	//		06	07	08	09			10	11	12	13
+	//					14	15	16	17
 
 /{
     combos {
@@ -125,11 +123,9 @@ combo_##NAME { \
     };
 };
 
-//  _______________________  _______________________
-// |  0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7 |
-//       \  8  |  9  | 10  /\  11 |  12 |  13 /
-//             \ 14  | 15 /  \ 16 |  17 /
-//              ----------    ----------
+	//			00	01	02			03	04	05
+	//		06	07	08	09			10	11	12	13
+	//					14	15	16	17
 
 
 / {
@@ -202,9 +198,9 @@ combo_##NAME { \
             label = "APT";
 
             bindings = <
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y
-                                              &my_lt NUM SQT &my_lt NAV SPACE   &my_lt SYM E   &my_lt FUN TAB
+                        &hl LALT S     &hl LGUI T     &hl LSHFT H              &hr RSHFT N    &hr RGUI A     &hr LALT I     
+               &hl LCTRL R    &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y   &hr RCTRL O
+                                               &my_lt NAV SPACE                &my_lt SYM E  
             >;
         };
         numbers {
