@@ -44,21 +44,18 @@ combo_##NAME { \
     timeout-ms = <20>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
 };
 #define SLOWCOMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
     timeout-ms = <40>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
 };
 #define TCOMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
 combo_##NAME { \
     timeout-ms = <TIMEOUT>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
 };
 
 #define COMBOS_TOP_ROW(LTPR, LTRM, LTMI, MTII, RTIM, RTMR, RTRP) \
@@ -75,7 +72,6 @@ combo_##NAME { \
 	SLOWCOMBO(_mbii, MBII, 9 10) \
 	COMBO(_rbim, RBIM, 10 11) \
 	COMBO(_rbmr, RBMR, 11 12)
-
 
 	//			00	01	02			03	04	05
 	//		06	07	08	09			10	11	12	13
