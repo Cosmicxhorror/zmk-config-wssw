@@ -200,9 +200,9 @@ combo_##NAME { \
             label = "APT";
 
             bindings = <
-                              &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I
-                &hl LCTRL R   &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y           &hr RCTRL O
-                                            &my_lt NAV SPACE &my_lt NAV SPACE   &my_lt SYM E   &my_lt SYM E
+                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
+                               &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y
+                                              &my_lt NUM SQT &my_lt NAV SPACE   &my_lt SYM E   &my_lt FUN TAB
             >;
         };
         numbers {
@@ -241,5 +241,6 @@ combo_##NAME { \
                                               &trans         &trans             &trans         &trans
             >;
         };
+
     };
 };
