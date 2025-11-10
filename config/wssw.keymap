@@ -116,6 +116,13 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 3 5)
         SLOWCOMBO(del, &kp DEL, 4 13)
         COMBO(delword, &kp LC(BSPC), 3 13)
+/* numbers */
+        LAYER_COMBO(R7, &kp N7, 10 11, 1)
+        LAYER_COMBO(R8, &kp N8, 3 4, 1)
+        LAYER_COMBO(R9, &kp N9, 11 12, 1)
+        LAYER_COMBO(R0, &kp N0, 4 5, 1)
+        LAYER_COMBO(Lplus, &kp PLUS, 1 9, 1)
+        LAYER_COMBO(Rplus, &kp PLUS, 4 10, 1)
     };
 };
 
@@ -193,17 +200,17 @@ combo_##NAME { \
             label = "APT";
 
             bindings = <
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y
-                                              &my_lt NUM SQT &my_lt NAV SPACE   &my_lt SYM E   &my_lt FUN TAB
+                              &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     
+                &hl LCTRL R   &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y           &hr RCTRL O 
+                                            &my_lt NAV SPACE &my_lt NAV SPACE   &my_lt SYM E   &my_lt SYM E
             >;
         };
         numbers {
             label = "NUM";
 
             bindings = <
-                &hl LCTRL PLUS &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH    &kp N4         &kp N5         &kp N6         &dotcol
-                               &kp N9         &kp N8         &kp N7             &kp N1         &kp N2         &kp N3
+                                &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH    &kp N4         &kp N5         &kp N6         
+                 &hl LCTRL PLUS &kp N9         &kp N8         &kp N7             &kp N1         &kp N2         &kp N3        &dotcol
                                               &trans         &trans             &kp E          &kp N0
             >;
         };
@@ -211,8 +218,8 @@ combo_##NAME { \
             label = "NAV";
 
             bindings = <
-                &sk LCTRL      &sk LALT       &sk LGUI       &sk LSHFT          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
-                               &kp C_VOL_UP   &kp PG_UP      &kp C_VOL_DN       &kp HOME       &kp PG_DN      &kp END
+                               &sk LALT       &sk LGUI       &sk LSHFT          &kp LEFT       &kp DOWN       &kp UP         
+                &sk LCTRL      &kp C_VOL_UP   &kp PG_UP      &kp C_VOL_DN       &kp HOME       &kp PG_DN      &kp END        &kp RIGHT
                                               &trans         &trans             &sk RALT       &trans
             >;
         };
@@ -220,8 +227,8 @@ combo_##NAME { \
             label = "SYM";
 
             bindings = <
-                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                               &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL
+                               &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    
+                &kp EXCL       &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL      &kp CARET
                                               &kp TILDE      &trans         &trans         &trans
             >;
         };
@@ -229,8 +236,8 @@ combo_##NAME { \
             label = "FUN";
 
             bindings = <
-                &bootloader    &kp F12        &kp F11        &kp F10            &kp F4         &kp F5         &kp F6         &none
-                               &kp F9         &kp F8         &kp F7             &kp F1         &kp F2         &kp F3
+                               &kp F12        &kp F11        &kp F10            &kp F4         &kp F5         &kp F6         
+                 &bootloader   &kp F9         &kp F8         &kp F7             &kp F1         &kp F2         &kp F3         &none
                                               &trans         &trans             &trans         &trans
             >;
         };
