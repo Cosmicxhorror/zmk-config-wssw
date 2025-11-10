@@ -129,6 +129,13 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 3 5)
         SLOWCOMBO(del, &kp DEL, 4 13)
         COMBO(delword, &kp LC(BSPC), 3 13)
+
+        /* numbers */
+        LAYER_COMBO(R7, &kp N7, 12 13, 1)
+        LAYER_COMBO(R8, &kp N8, 4 5, 1)
+        LAYER_COMBO(R9, &kp N9, 13 14, 1)
+        LAYER_COMBO(R0, &kp N0, 5 6, 1)
+        LAYER_COMBO(Rplus, &kp PLUS, 5 12, 1)
     };
 };
 
