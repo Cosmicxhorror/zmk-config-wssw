@@ -209,8 +209,8 @@ combo_##NAME { \
             label = "NUM";
 
             bindings = <
-                                &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH    &kp N4         &kp N5         &kp N6
-                 &hl LCTRL PLUS &kp N9         &kp N8         &kp N7             &kp N1         &kp N2         &kp N3        &dotcol
+                &hl LCTRL PLUS &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH    &kp N4         &kp N5         &kp N6         &dotcol
+                               &kp N9         &kp N8         &kp N7             &kp N1         &kp N2         &kp N3
                                               &trans         &trans             &kp E          &kp N0
             >;
         };
@@ -218,8 +218,8 @@ combo_##NAME { \
             label = "NAV";
 
             bindings = <
-                               &sk LALT       &sk LGUI       &sk LSHFT          &kp LEFT       &kp DOWN       &kp UP 
-                &sk LCTRL      &kp C_VOL_UP   &kp PG_UP      &kp C_VOL_DN       &kp HOME       &kp PG_DN      &kp END        &kp RIGHT
+                &sk LCTRL      &sk LALT       &sk LGUI       &sk LSHFT          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
+                               &kp C_VOL_UP   &kp PG_UP      &kp C_VOL_DN       &kp HOME       &kp PG_DN      &kp END
                                               &trans         &trans             &sk RALT       &trans
             >;
         };
@@ -227,8 +227,8 @@ combo_##NAME { \
             label = "SYM";
 
             bindings = <
-                               &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT
-                &kp EXCL       &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL      &kp CARET
+                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
+                               &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL
                                               &kp TILDE      &trans         &trans         &trans
             >;
         };
@@ -236,11 +236,10 @@ combo_##NAME { \
             label = "FUN";
 
             bindings = <
-                               &kp F12        &kp F11        &kp F10            &kp F4         &kp F5         &kp F6
-                 &bootloader   &kp F9         &kp F8         &kp F7             &kp F1         &kp F2         &kp F3         &none
+                &bootloader    &kp F12        &kp F11        &kp F10            &kp F4         &kp F5         &kp F6         &none
+                               &kp F9         &kp F8         &kp F7             &kp F1         &kp F2         &kp F3
                                               &trans         &trans             &trans         &trans
             >;
         };
-
     };
 };
