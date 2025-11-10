@@ -16,9 +16,6 @@
 #define FUN 4
 #define BUZ 5
 
-// &lt {
-//     quick_tap_ms = <170>;
-// };
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
@@ -119,13 +116,6 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 3 5)
         SLOWCOMBO(del, &kp DEL, 4 13)
         COMBO(delword, &kp LC(BSPC), 3 13)
-/* numbers */
-        LAYER_COMBO(R7, &kp N7, 10 11, 1)
-        LAYER_COMBO(R8, &kp N8, 3 4, 1)
-        LAYER_COMBO(R9, &kp N9, 11 12, 1)
-        LAYER_COMBO(R0, &kp N0, 4 5, 1)
-        LAYER_COMBO(Lplus, &kp PLUS, 1 9, 1)
-        LAYER_COMBO(Rplus, &kp PLUS, 4 10, 1)
     };
 };
 
