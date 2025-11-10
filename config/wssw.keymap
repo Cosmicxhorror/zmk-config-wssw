@@ -200,7 +200,7 @@ combo_##NAME { \
             bindings = <
                         &hl LALT S     &hl LGUI T     &hl LSHFT H              &hr RSHFT N    &hr RGUI A     &hr LALT I     
                &hl LCTRL R    &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y   &hr RCTRL O
-                                               &my_lt NAV SPACE                &my_lt SYM E  
+                              &my_lt NAV SPACE   &my_lt NAV SPACE                &my_lt SYM E  &my_lt SYM E  
             >;
         };
         numbers {
