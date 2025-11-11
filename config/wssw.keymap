@@ -14,7 +14,6 @@
 #define NAV 2
 #define SYM 3
 #define FUN 4
-#define BUZ 5
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
@@ -108,10 +107,10 @@ combo_##NAME { \
         COMBO(semi, &kp SEMICOLON, 11 17)
         COMBO(colon, &kp COLON, 13 17)
         COMBO(minus, &kp MINUS, 11 12 17)
-        COMBO(slash, &kp SLASH, 12 13 17)
+        COMBO(slash, &kp SLASH, 10 17)
         COMBO(esc2, &kp ESC, 8 9 15)
         COMBO(tab, &kp TAB, 7 8 9)
-
+        COMBO(sqt, &kp SQT, 12 13 17)
         /* parentheticals */
         COMBO(lt, &kp LT, 0 9)
         COMBO(lbrc, &kp LBRC, 0 7)
@@ -200,8 +199,8 @@ combo_##NAME { \
       compatible = "zmk,conditional-layers";
   
       fun {
-          if-layers = <2 1>;
-          then-layer = <3>;
+          if-layers = <2 3>;
+          then-layer = <4>;
       };
   };
 };
@@ -215,7 +214,7 @@ combo_##NAME { \
 
             bindings = <
                 &hl LALT S     &hl LGUI T     &hl LSHFT H      &hr RSHFT N    &hr RGUI A     &hr LALT I
-                &hl LCTRL R    &kp C          &kp G            &kp D          &kp L          &kp U          &kp Y          &hr RCTRL O
+                &hl LCTRL R    &kp C          &kp G            &kp NUM D          &kp L          &kp U          &kp Y          &hr RCTRL O
                                 &my_lt NAV SPACE  &my_lt NAV SPACE  &my_lt SYM E  &my_lt SYM E
             >;
         };
@@ -225,7 +224,7 @@ combo_##NAME { \
 
             bindings = <
                 &hl LALT MINUS &hl LGUI STAR  &hl LSHFT SLASH  &kp N4         &kp N5         &kp N6
-                &hl LCTRL PLUS &kp N9         &kp N8           &kp N7         &kp N1         &kp N2         &kp N3         &dotcol
+                &hl LCTRL PLUS &trans         &trans          &kp N7         &kp N1         &kp N2         &kp N3         &dotcol
                                 &trans         &trans           &trans         &trans
             >;
         };
@@ -236,7 +235,7 @@ combo_##NAME { \
             bindings = <
                 &sk LALT       &sk LGUI       &sk LSHFT        &kp LEFT       &kp DOWN       &kp UP
                 &sk LCTRL      &kp C_VOL_UP   &kp PG_UP        &kp C_VOL_DN   &kp HOME       &kp PG_DN      &kp END        &kp RIGHT
-                                &trans         &trans           &sk RALT       &trans
+                                &trans         &trans           &trans       &trans
             >;
         };
 
@@ -255,7 +254,7 @@ combo_##NAME { \
 
             bindings = <
                 &kp F12        &kp F11        &kp F10          &kp F4         &kp F5         &kp F6
-                &bootloader    &kp F9         &kp F8           &kp F7         &kp F1         &kp F2         &kp F3         &none
+                &bootloader    &kp F9         &kp F8           &kp F7         &kp F1         &kp F2         &kp F3         &bt BT_CLR
                                 &trans         &trans           &trans         &trans
             >;
         };
