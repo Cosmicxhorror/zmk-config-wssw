@@ -111,6 +111,7 @@ combo_##NAME { \
         COMBO(esc2, &kp ESC, 8 9 15)
         COMBO(tab, &kp TAB, 7 8 9)
         COMBO(sqt, &kp SQT, 12 13 17)
+
         /* parentheticals */
         COMBO(lt, &kp LT, 0 9)
         COMBO(lbrc, &kp LBRC, 0 7)
@@ -254,7 +255,7 @@ combo_##NAME { \
 
             bindings = <
                 &kp F12        &kp F11        &kp F10          &kp F4         &kp F5         &kp F6
-                &bootloader    &kp F9         &kp F8           &kp F7         &kp F1         &kp F2         &kp F3         &bt BT_CLR
+                &bootloader    &kp F9         &kp F8           &kp F7         &kp F1         &kp F2         &kp F3         &none
                                 &trans         &trans           &trans         &trans
             >;
         };
