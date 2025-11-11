@@ -195,15 +195,16 @@ combo_##NAME { \
         };
     };
 };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        fun {
-            if-layers = <2 1>;
-            then-layer = <3>;
-        };
-    };
+/ {
+  conditional_layers {
+      compatible = "zmk,conditional-layers";
+  
+      fun {
+          if-layers = <2 1>;
+          then-layer = <3>;
+      };
+  };
+};
 
 / {
     keymap {
