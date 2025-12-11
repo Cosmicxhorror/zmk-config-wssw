@@ -139,10 +139,10 @@ combo_##NAME { \
         LAYER_COMBO(Rplus, &kp PLUS, 4 10, 1)
 
         /* fun */ 
-        LAYER_COMBO(R7, &kp F7, 10 11, 4)
-        LAYER_COMBO(R8, &kp F8, 3 4, 4)
-        LAYER_COMBO(R9, &kp F9, 11 12, 4)
-        LAYER_COMBO(R0, &kp F10, 4 5, 4)
+        LAYER_COMBO(RF7, &kp F7, 10 11, 4)
+        LAYER_COMBO(RF8, &kp F8, 3 4, 4)
+        LAYER_COMBO(RF9, &kp F9, 11 12, 4)
+        LAYER_COMBO(RF10, &kp F10, 4 5, 4)
     };
 };
 
@@ -260,7 +260,7 @@ combo_##NAME { \
             label = "FUN";
 
             bindings = <
-                          &trans         &kp F12          &kp F11        &kp F4         &kp F5         &kp F6
+                &trans         &kp F12          &kp F11        &kp F4         &kp F5         &kp F6
                 &bt BT_SEL 1    &bt BT_SEL 2         &trans           &trans         &kp F1         &kp F2         &kp F3         &bt BT_CLR_ALL
                                 &trans         &trans           &trans         &trans
             >;
