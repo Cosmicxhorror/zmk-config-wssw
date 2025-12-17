@@ -102,7 +102,7 @@ combo_##NAME { \
         COMBO(k, &kp K, 1 9)
         COMBO(j, &kp J, 4 10)
         COMBO(shiftablesch, &macro_shiftable_sch, 0 2)
-        COMBO(enter, &kp ENTER, 10 12)
+        COMBO(enter, &kp ENTER, 10 11 12)
         COMBO(esc, &kp ESC, 2 6)
         COMBO(semi, &kp SEMICOLON, 11 17)
         COMBO(colon, &kp COLON, 13 17)
